@@ -56,8 +56,8 @@ apt-get --yes install curl
 apt-get build-dep --yes python-lxml
 
 # Clone the designate repos locally
-sudo -u vagrant git clone https://github.com/stackforge/designate.git /home/vagrant/designate
-sudo -u vagrant git clone https://github.com/stackforge/python-designateclient.git /home/vagrant/python-designateclient
+sudo -u vagrant git clone https://github.com/openstack/designate /home/vagrant/designate
+sudo -u vagrant git clone https://github.com/openstack/python-designateclient /home/vagrant/python-designateclient
 
 # Pre-Install Designate's Dependancies
 pip install -r /home/vagrant/designate/requirements.txt

@@ -20,8 +20,8 @@ sed -i "s/%ADMIN_TENANT_ID%/$ADMIN_TENANT_ID/" /etc/neutron/neutron.conf
 
 ip link add type veth
 
-ovs-vsctl add-br br-int
-ovs-vsctl add-br br-ex
+ovs-vsctl --may-exist add-br br-int
+ovs-vsctl --may-exist add-br br-ex
 ovs-vsctl add-port br-ex veth0
 
 service neutron-server restart

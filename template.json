@@ -2,7 +2,7 @@
     "builders": [
         {
             "type": "virtualbox-iso",
-            "iso_url": "http://ftp.heanet.ie/pub/ubuntu-releases/12.04.4/ubuntu-12.04.4-server-amd64.iso",
+            "iso_url": "http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-server-amd64.iso",
             "iso_checksum": "3aeb42816253355394897ae80d99a9ba56217c0e98e05294b51f0f5b13bceb54",
             "iso_checksum_type": "sha256",
             "boot_wait": "5s",

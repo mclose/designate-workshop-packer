@@ -4,10 +4,10 @@ all: packer clean files build
 
 packer.zip:
 ifeq ($(UNAME_S),Linux)
-        curl -s -L -o packer.zip http://dl.bintray.com/mitchellh/packer/packer_0.7.5_linux_amd64.zip
+	curl -s -L -o packer.zip http://dl.bintray.com/mitchellh/packer/packer_0.7.5_linux_amd64.zip	
 endif
 ifeq ($(UNAME_S),Darwin)
-        curl -s -L -o packer.zip http://dl.bintray.com/mitchellh/packer/packer_0.7.5_darwin_amd64.zip
+	curl -s -L -o packer.zip http://dl.bintray.com/mitchellh/packer/packer_0.7.5_darwin_amd64.zip
 endif
 
 packer: packer.zip
